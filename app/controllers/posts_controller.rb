@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-     # before_action :authenticate
+      before_action :authenticate
       def index
         if params[:category] || params[:title]
           @Post = search(params)
